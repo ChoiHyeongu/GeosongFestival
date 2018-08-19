@@ -10,7 +10,7 @@
     <item
         android:id="@+id/action_boothList"
         android:enabled="true"
-        android:icon="@mipmap/icon_schedule"
+        android:icon="@mipmap/icon_booth"
         android:title="부스" />
 
     <item
