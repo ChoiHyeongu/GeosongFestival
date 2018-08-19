@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/action_home"
+        android:id="@+id/action_schedule"
         android:enabled="true"
-        android:icon="@mipmap/home_icon"
-        android:title="홈" />
+        android:icon="@mipmap/icon_schedule"
+        android:title="시간표"/>
 
     <item
-        android:id="@+id/action_list"
+        android:id="@+id/action_boothList"
         android:enabled="true"
-        android:icon="@mipmap/icon_list"
-        android:title="목록" />
+        android:icon="@mipmap/icon_schedule"
+        android:title="부스" />
 
     <item
-        android:id="@+id/action_setting"
+        android:id="@+id/action_information"
         android:enabled="true"
-        android:icon="@mipmap/icon_setting"
-        android:title="옵션" />
+        android:icon="@mipmap/icon_information"
+        android:title="정보" />
 
 </menu>
