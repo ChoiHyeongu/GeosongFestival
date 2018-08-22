@@ -43,7 +43,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="디자이너 : 000"
+        android:text="디자이너 : 백재은"
         android:textColor="@android:color/black"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
