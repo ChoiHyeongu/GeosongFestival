@@ -15,10 +15,11 @@
         android:layout_height="wrap_content" />
 
     <GridLayout
-        android:background="#c2c2ac"
         android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="10">
 
 
     </GridLayout>

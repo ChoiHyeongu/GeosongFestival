@@ -27,6 +27,7 @@ public class BoothListFragment extends Fragment {
         for (int i = 1; i < 10; i++) {
             boothItemArrayList.add(new BoothItem(R.mipmap.icon_home, "Booth Name" + i, "What to do"));
         }
+
         boothList.setAdapter(new BoothListAdapter(getActivity(), boothItemArrayList));
 
         return rootView;
