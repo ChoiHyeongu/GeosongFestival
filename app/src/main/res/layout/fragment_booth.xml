@@ -14,10 +14,7 @@
     <ListView
         android:id="@+id/boothFragment_boothList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@color/pastel"
-        android:dividerHeight="10dp">
-
+        android:layout_height="wrap_content">
     </ListView>
 
 </LinearLayout>
