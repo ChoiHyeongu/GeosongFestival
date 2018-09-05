@@ -3,6 +3,5 @@
     <color name="colorPrimary">@android:color/black</color>
     <color name="colorPrimaryDark">@android:color/white</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="boothBackground">#cccccc</color>
-    <color name="pastel">#ffccff</color>
+    <color name="colorBackground">#87e492</color>
 </resources>
