@@ -6,13 +6,19 @@
     android:orientation="vertical">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/solid"
+        android:gravity="center"
         android:text="시간표"
         android:textColor="@android:color/black"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:background="@drawable/solid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textSize="20dp" />
 
+    <GridView
+        android:id="@+id/scheduleFragment_scheduleList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:numColumns="3" />
 
 </LinearLayout>
