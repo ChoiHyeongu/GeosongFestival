@@ -16,8 +16,6 @@ public class ScheduleListFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_schedule, container, false);
-        adapter = new ScheduleListAdapter(getContext(), R.layout.fragment_schedule);
-
 
         return rootView;
     }

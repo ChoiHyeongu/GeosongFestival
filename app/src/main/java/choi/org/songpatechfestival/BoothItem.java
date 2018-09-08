@@ -4,12 +4,14 @@ public class BoothItem {
 
     private int boothImage;
     private String boothName;
-    private String boothEvent;
+    private String circleName;
+    private String place;
 
-    public BoothItem(int boothImage, String boothName, String boothEvent) {
+    public BoothItem(int boothImage, String boothName, String circleName, String place) {
         this.boothImage = boothImage;
         this.boothName = boothName;
-        this.boothEvent = boothEvent;
+        this.circleName = circleName;
+        this.place = place;
     }
 
     public int getBoothImage() {
@@ -22,18 +24,25 @@ public class BoothItem {
 
     public String getBoothName() {
         return boothName;
-
     }
 
     public void setBoothName(String boothName) {
         this.boothName = boothName;
     }
 
-    public String getBoothEvent() {
-        return boothEvent;
+    public String getCircleName() {
+        return circleName;
     }
 
-    public void setBoothEvent(String boothEvent) {
-        this.boothEvent = boothEvent;
+    public void setCircleName(String circleName) {
+        this.circleName = circleName;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
     }
 }

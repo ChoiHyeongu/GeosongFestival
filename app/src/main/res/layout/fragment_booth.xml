@@ -4,18 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Spinner
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_gravity="center">
-
-    </Spinner>
-
     <ListView
         android:id="@+id/boothFragment_boothList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:dividerHeight="5dp">
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp"
+        android:divider="@android:color/white">
     </ListView>
 
 </LinearLayout>
