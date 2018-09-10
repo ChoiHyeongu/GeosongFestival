@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -38,11 +37,15 @@ public class BoothListFragment extends Fragment {
                 "거송관 복도", "물리실", "물리실", "306교실", "307교실", "308교실", "수학전용실", "국어전용실", "도서관"
         };
 
+        int[] boothImage={
+                R.mipmap.algo,R.mipmap.iot, R.mipmap.ads, R.mipmap.baking, R.mipmap.drone, R.mipmap.pingpong, R.mipmap.startup, R.mipmap.vocal
+        };
+
         boothList = (ListView) rootView.findViewById(R.id.boothFragment_boothList);
         boothItemArrayList = new ArrayList<BoothItem>();
 
-        for (i = 0; i < boothName.length; i++) {
-            boothItemArrayList.add(new BoothItem(R.mipmap.icon_home, boothName[i], circleName[i], place[i]));
+        for (i = 0; i < boothImage.length; i++) {
+            boothItemArrayList.add(new BoothItem(boothImage[i], boothName[i], circleName[i], place[i]));
         }
 
         boothList.setAdapter(new BoothListAdapter(getActivity(), boothItemArrayList));

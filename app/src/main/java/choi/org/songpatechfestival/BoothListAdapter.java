@@ -50,7 +50,6 @@ public class BoothListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         if (convertView == null) {
-            Log.d("convert == null", "Error");
             convertView = LayoutInflater.from(context).inflate(R.layout.item_booth, null);
 
             viewHolder = new ViewHolder();
@@ -61,7 +60,6 @@ public class BoothListAdapter extends BaseAdapter {
             viewHolder.place = (TextView) convertView.findViewById(R.id.boothItem_place);
             convertView.setTag(viewHolder);
         } else {
-            Log.d("convert != null", "Error");
             viewHolder = (ViewHolder)convertView.getTag();
         }
 

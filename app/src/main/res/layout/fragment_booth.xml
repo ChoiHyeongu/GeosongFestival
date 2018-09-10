@@ -4,11 +4,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:textAlignment="center"
+        android:text="부스"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/solid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <ListView
         android:id="@+id/boothFragment_boothList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:dividerHeight="5dp"
+        android:dividerHeight="1dp"
         android:divider="@android:color/white">
     </ListView>
 
