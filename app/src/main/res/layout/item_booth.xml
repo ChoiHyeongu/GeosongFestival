@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/boothItem_boothImage"
-        android:layout_width="360dp"
-        android:layout_height="145dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:layout_marginEnd="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="4dp"

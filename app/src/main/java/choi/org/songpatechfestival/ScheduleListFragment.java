@@ -23,23 +23,19 @@ public class ScheduleListFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_schedule, container, false);
 
-        String[] date = {
-            "09:01~09:09", "09:17~09:24", "09:24~09:34", "09:34~09:51"
-        };
-
         String[] event = {
-            "스마트 항공반", "가야금반", "차동엽 외 7명", "김동환 외 5명"
+            "스마트 항공반", "가야금반", "김규리", "차동엽 외 7명", "김동환 외 5명", "방송반", "부스활동", "스마트항공반", "어머니 10명", "구휘 외 5명"
         };
 
         String[] detail = {
-            "드론 시연", "가야금 합주", "두드림 난타", "태권도 퍼포먼스"
+            "드론 시연", "가야금 합주", "25현 가야금 독주", "두드림 난타", "태권도 퍼포먼스", "동아리 활동 영상", "부스 활동", "드론시연", "어머니 가야금 합주", "댄스"
         };
 
         scheduleList = (ListView) rootView.findViewById(R.id.scheduleFragment_scheduleList);
         scheduleItemArrayList = new ArrayList<ScheduleItem>();
 
-        for (i = 0; i < date.length; i++) {
-            scheduleItemArrayList.add(new ScheduleItem(date[i], event[i], detail[i]));
+        for (i = 0; i < event.length; i++) {
+            scheduleItemArrayList.add(new ScheduleItem(event[i], event[i], detail[i]));
         }
 
         scheduleList.setAdapter(new ScheduleListAdapter(getActivity(), scheduleItemArrayList));

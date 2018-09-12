@@ -15,7 +15,6 @@ public class ScheduleListAdapter extends BaseAdapter {
     ArrayList<ScheduleItem> scheduleItemArrayList;
 
     class ViewHolder{
-        TextView date;
         TextView event;
         TextView detail;
     }
@@ -50,7 +49,6 @@ public class ScheduleListAdapter extends BaseAdapter {
 
             viewHolder = new ViewHolder();
 
-            viewHolder.date = (TextView) convertView.findViewById(R.id.scheduleItem_date);
             viewHolder.event = (TextView) convertView.findViewById(R.id.scheduleItem_event);
             viewHolder.detail = (TextView) convertView.findViewById(R.id.scheduleItem_detail);
             convertView.setTag(viewHolder);
@@ -58,7 +56,6 @@ public class ScheduleListAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        viewHolder.date.setText(scheduleItemArrayList.get(position).getDate());
         viewHolder.event.setText(scheduleItemArrayList.get(position).getEvent());
         viewHolder.detail.setText(scheduleItemArrayList.get(position).getDetail());
 
