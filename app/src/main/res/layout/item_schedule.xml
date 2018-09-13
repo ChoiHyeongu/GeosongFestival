@@ -13,7 +13,7 @@
         android:text="등교"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="17dp" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/scheduleItem_detail"
@@ -24,6 +24,6 @@
         android:text="아침등교"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="17dp" />
+        android:textSize="25dp" />
 
 </LinearLayout>
